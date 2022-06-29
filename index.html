@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="Douglas Obara" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script defer src="js/script.js"></script>
+    <title>Phase 1 ~ Final Project</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="logo" title="Cuisine Dishes">🍔 Cuisine Dishes</div>
+
+        <div class="midTitle">Meal Cuisine Restaurant</div>
+        <div class="contactBtn">
+          <a href="https://www.themealdb.com/contact.php">Contact Us</a>
+        </div>
+      </header>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h1 class="text-center pt-5 pb-3">
+              Get a
+              <span class="badge rounded-pill bg-warning text-dark mealSpan"
+                >Meal</span
+              >
+              for your Day?
+            </h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col text-center pb-3">
+            <button class="btn btn-success" id="generateBtn">
+              Generate Meal!
+            </button>
+          </div>
+        </div>
+
+        <hr />
+
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <img
+              src="assets/biryani.jpg"
+              class="img-fluid img-thumbnail"
+              alt="image"
+            />
+          </div>
+
+          <div class="col-12 col-lg-3">
+            <h2 id="title">Meal Title</h2>
+
+            <div class="row">
+              <h2 id="ingredientsTitle">Ingredients</h2>
+              <div>
+                <ul id="list">
+                  <li class="listItem">ingredients list 0</li>
+                  <li class="listItem">ingredients list 1</li>
+                  <li class="listItem">ingredients list 2</li>
+                  <li class="listItem">ingredients list 3</li>
+                  <li class="listItem">ingredients list 4</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <h3>How to Cook Insructions</h3>
+            <p id="instructions">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              ipsum, deleniti explicabo sunt odit optio quo hic molestias
+              provident aut esse recusandae quam. Doloribus, excepturi rem? Aut
+              nam itaque porro?
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row py-2 mt-5">
+        <div class="col-4 col-lg-4">
+          Category:
+          <span id="category" class="badge rounded-pill bg-info text-dark"
+            >A</span
+          >
+        </div>
+        <div class="col-4 col-lg-4">
+          Area:
+          <span id="area" class="badge rounded-pill bg-info text-dark">B</span>
+        </div>
+        <div class="col-4 col-lg-4">
+          Tags:
+          <span id="tags" class="badge rounded-pill bg-info text-dark">C</span>
+        </div>
+      </div>
+
+      <!-- youtube Video Recipe -->
+      <div class="row">
+        <div class="col-12 videoRecipe text-center py-3">
+          <h1>Recipe Video</h1>
+          <span class="underline"></span>
+        </div>
+        <div class="row text-center" id="iframe">
+          <div class="col-12" id="iframe">
+            <iframe
+              width="80%"
+              height="400"
+              src="https://www.youtube.com/embed/hzNEjflJHwY"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+              id="recipeVideo"
+            ></iframe>
+
+            <div class="like">
+              👍
+              <span
+                id="count"
+                class="countLike badge rounded-pill bg-dark text-light"
+                >0</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- comments section  -->
+      <div class="row pt-5">
+        <h3><span>📋</span> Comments:</h3>
+        <div class="col-12">
+          <form action="" id="commentForm">
+            <input
+              type="text"
+              id="input"
+              placeholder="Write your comment here"
+              autocomplete="off"
+            /><br />
+            <input type="submit" id="submit" value="COMMENT" />
+          </form>
+        </div>
+
+        <div class="comments pt-5">
+          <p>
+            <b><u>Recent comments</u></b>
+          </p>
+        </div>
+      </div>
+      <hr />
+    </div>
+
+    <!-- footer section -->
+    <div class="container-fluid">
+      <div class="row bg-success pt-4">
+        <p class="text-center text-light">
+          Made with ❤️ by
+          <span class="text-dark"> Douglas Obara</span> <br />&copy; 2022
+          Moringa School
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
